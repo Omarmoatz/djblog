@@ -1,10 +1,18 @@
-<h1>post detail</h1>
+{% extends "base.html" %}
+{% block body %}
+<div class="main-wrapper">
+	<article class="blog-post px-3 py-5 p-md-5">
+		<div class="container single-col-max-width">
+			<header class="blog-post-header">
+				<h2 class="title mb-2">{{post}}</h2>
+				<div class="meta mb-3"><span class="date">Published 2 days ago</span><span class="time">5 min
+						read</span><span class="comment"><a class="text-link" href="#">4 comments</a></span></div>
+			</header>
 
-<h3>{{post}}</h3>
-
-<p>{{post.content}}</p>
-
-<img src="{{post.image.url}}" alt="" width=200px>
-
-<a href="{% url 'blog:edit' post.id %}">Edit Post</a>
-<a href="{% url 'blog:delete' post.id%}">Delete Post</a>
+			<div class="blog-post-body">
+				<figure class="blog-banner">
+					<img src="{{post.image.url}}" alt="" width=200px>
+				</figure>
+				<p> {{post.content}}</p>
+				
+					{% endblock body %}
