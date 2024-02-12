@@ -1,2 +1,2 @@
 # djblog
-A Blog for posts using CRUD operations
+is a Django-based blog application that implements CRUD (Create, Read, Update, Delete) operations for managing blog posts. It provides a platform for users to create, view, edit, and delete blog posts, allowing them to easily publish and manage their content. The application is built using Python, Django, JavaScript, SCSS, CSS, and HTML. With its CRUD functionality, the djblog repository offers a foundation for building a robust and customizable blogging platform.
